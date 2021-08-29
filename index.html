@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Misty's Code Quiz</title>
+    <title>Misty's JavaScript Quiz</title>
 </head>
+<header><h1>Misty's JavaScript Quiz</h1></header>
 <body>
-    <script src="scripts.js"></script>
+    <div class="container" >
+        <div id="timer-container">
+            <h3>You have 60 seconds to complete the Quiz!</h3>
+            <div id="timer"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+    <div class="container hide">
+        <div id="scores-container">
+            <div id="scores">High Scores</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

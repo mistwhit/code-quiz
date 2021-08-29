@@ -1,3 +1,105 @@
-* {
-    background-color: aquamarine;
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+        'Helvetica Neue', sans-serif;
+}
+
+/* This declares variables for the colors used throughout the program */
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+
+header {
+    color: white;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+/* This changes the color of the body when the answer is correct */
+body.correct {
+    --hue: var(--hue-correct);
+  }
+
+/* This changes the color of the body when the answer is incorrect */
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+
+/* Styles for the containers */
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px 1px;
+    text-align: center;
+}
+
+/* Styles the spacing between the answer buttons */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Styles all buttons */
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+
+/* Styles when cursor hovers over button */
+.btn:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
+/* Chages the button color if answer is correct */
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+
+/* Changes the button color if answer is incorrect */
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+
+/* Styles Start and Next buttons */
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hides elements with "hide" class */
+.hide {
+    display: none;
 }
