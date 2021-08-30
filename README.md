@@ -5,8 +5,7 @@
 - This was accomplished through creating a start button that generates a series of questions, subtracting time for the clock if a question is answered incorrectly, indicating the game is over when the time reaches 0, and saving the user's initals and score. 
 
 ## Screenshot
-![Screenshot of](.png)
-![Screenshot of](.png)
+![Screenshot of Code Quiz](screenshot-code-quiz.png)
 
 ## Link
 https://mistwhit.github.io/code-quiz/
