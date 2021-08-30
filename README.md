@@ -9,3 +9,10 @@
 
 ## Link
 https://mistwhit.github.io/code-quiz/
+
+## References & Inspiration
+Questions pulled from W3 Schools:
+https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS
+
+Styling and Logic Inspired By Web Dev Simplified:
+https://www.youtube.com/watch?v=riDzcEQbX6k&list=PLdfk8iKcUhtjv1_hzr-H1aPw2rhImNnW-

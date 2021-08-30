@@ -7,13 +7,13 @@
 
 /* This declares variables for the colors used throughout the program */
 :root {
-    --hue-neutral: 200;
+    --hue-neutral: 300;
     --hue-wrong: 0;
     --hue-correct: 145;
   }
 
 header {
-    color: white;
+    color: black;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: hsl(var(--hue), 100%, 20%);
+    background-color: hsl(var(--hue), 50%, 75%);
 }
 
 /* This changes the color of the body when the answer is correct */
@@ -62,10 +62,10 @@ body.correct {
 .btn {
     --hue: var(--hue-neutral);
     border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 50%);
+    background-color: hsl(var(--hue), 50%, 75%);
     border-radius: 5px;
     padding: 5px 10px;
-    color: white;
+    color: black;
     outline: none;
   }
 
